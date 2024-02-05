@@ -19,11 +19,11 @@ with st.sidebar:
     st.markdown("# About")
     st.markdown(
         "AI app to find real-time discounts from various online markets [Amazon deals](https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb) in a specific location. "
-        "It uses Pathway’s [LLM App features](https://github.com/pathwaycom/llm-app) "
+        "It uses Pathway’s [LLM App features](https://github.com/pathwaycom/pathway) "
         "to build real-time LLM(Large Language Model)-enabled data pipeline in Python and join data from multiple input sources\n"
 
     )
-    st.markdown("[View the source code on GitHub](https://github.com/Boburmirzo/chatgpt-api-python-sales)")
+    st.markdown("[View the source code on GitHub](https://github.com/pathway-labs/chatgpt-api-python-sales)")
 
 # Load environment variables
 load_dotenv()
