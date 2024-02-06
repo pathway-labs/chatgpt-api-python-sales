@@ -1,7 +1,7 @@
 # ChatGPT Python API for sales
 
 This is an AI app to find **real-time** discounts/deals/sales prices from various online markets around the world. The project
-exposes an HTTP REST endpoint to answer user queries about current sales like [Amazon deals](https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb) in a specific location or from the given any input file such as (CSV, Jsonlines, PDF, Markdown, Txt). It uses Pathway’s [LLM App features](https://github.com/pathwaycom/llm-app) to build real-time LLM(Large Language Model)-enabled data pipeline in Python and join data from multiple input sources, leverages OpenAI API [Embeddings](https://platform.openai.com/docs/api-reference/embeddings) and [Chat Completion](https://platform.openai.com/docs/api-reference/completions) endpoints to generate AI assistant responses.
+exposes an HTTP REST endpoint to answer user queries about current sales like [Amazon deals](https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb) in a specific location or from the given any input file such as (CSV, Jsonlines, PDF, Markdown, Txt). It uses Pathway’s [LLM App features](https://github.com/pathwaycom/pathway) to build real-time LLM(Large Language Model)-enabled data pipeline in Python and join data from multiple input sources, leverages OpenAI API [Embeddings](https://platform.openai.com/docs/api-reference/embeddings) and [Chat Completion](https://platform.openai.com/docs/api-reference/completions) endpoints to generate AI assistant responses.
 
 Currently, the project supports two types of data sources and it is **possible to extend sources** by adding custom input connectors:
 
@@ -86,7 +86,7 @@ pw.run()
 - Real-time data.
 - Including discount information.
 
-The model might not answer such queries properly. Because it is not aware of the context or historical data or it needs additional details. In this case, you can use LLM App efficiently to give context to this search or answer process.  See how LLM App [works](https://github.com/pathwaycom/llm-app#how-it-works).
+The model might not answer such queries properly. Because it is not aware of the context or historical data or it needs additional details. In this case, you can use Pathway LLM xpack efficiently to give context to this search or answer process. See how LLM Application built with Pathway [works](https://github.com/pathwaycom/llm-app#how-it-works).
 
 For example, a typical response you can get from the OpenAI [Chat Completion endpoint](https://platform.openai.com/docs/api-reference/chat) or [ChatGPT UI](https://chat.openai.com/) interface without context is:
 
@@ -250,4 +250,4 @@ Ship Date: 2024-08-09
 
 1. [Set environment variables](#step-2-set-environment-variables)
 2. From the project root folder, open your terminal and run `docker compose up`.
-3. Navigate to `localhost:8501` on your browser when docker installion is successful.
+3. Navigate to `localhost:8501` on your browser when docker installation is successful.

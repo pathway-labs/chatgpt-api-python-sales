@@ -1,6 +1,7 @@
 import os
 import requests
 import json
+import json5
 from dotenv import load_dotenv
 from urllib.parse import urlencode
 
@@ -29,7 +30,8 @@ def send_request(data_dir, params):
     response = requests.get(get_url(params))
 
     if response.status_code == 200:
-        data = response.json()
+        # needed because of trailing coma in returned json array
+        data = json5.loads(response.text)
 
         deals_results = data.get('deals_results', [])
 
